@@ -24,7 +24,7 @@ colorama.init()
 
 def loading():
     print_formatted_text(
-        HTML(u'<b>> {}</b> <loading>loading...</loading>', style=style)
+        HTML(u'<b>> {}</b> <loading>loading...</loading>', style=style))
 
 
 def get_datasets(asset, currency, granularity, datapoints, df_train_size=0.75):
