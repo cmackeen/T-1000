@@ -1,4 +1,3 @@
-import emoji
 import random
 from termcolor import colored
 
@@ -24,9 +23,8 @@ colorama.init()
 
 
 def loading():
-    emojis = [':moneybag:', ':yen:', ':dollar:', ':pound:', ':euro:']
     print_formatted_text(
-        HTML(u'<b>> {}</b> <loading>loading...</loading>'.format(emoji.emojize(random.choice(emojis), use_aliases=True))), style=style)
+        HTML(u'<b>> {}</b> <loading>loading...</loading>', style=style)
 
 
 def get_datasets(asset, currency, granularity, datapoints, df_train_size=0.75):
